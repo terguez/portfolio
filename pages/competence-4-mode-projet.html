@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>4) Travailler en mode projet – Portfolio – Théo AUBINEAU</title>
+  <meta name="description" content="Conduite d’un projet de déploiement de Windows 11 en collectivité." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="dot"></span>
+    <strong>Théo AUBINEAU</strong>
+    <span class="subtitle">• BTS SISR</span>
+  </div>
+  <nav class="nav">
+    <button class="nav-toggle" aria-controls="menu" aria-expanded="false">☰</button>
+    <ul id="menu">
+      <li><a href="../index.html#accueil">Accueil</a></li>
+      <li><a class="active" href="../index.html#competences">Compétences</a></li>
+      <li><a href="../index.html#projets">Projets</a></li>
+      <li><a href="../index.html#annexes">Annexes</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><button id="themeToggle" class="btn ghost">🌓</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="section">
+
+  <p><a class="btn" href="../index.html#competences">← Retour aux compétences</a></p>
+
+  <h1>4) Travailler en mode projet</h1>
+  <p class="lead">
+    Organisation, planification et suivi d’un projet informatique en collectivité.
+  </p>
+
+  <div class="grid-3">
+
+    <!-- OBJECTIFS -->
+    <article class="card">
+      <h2>Objectifs du projet</h2>
+      <ul>
+        <li>Moderniser le parc informatique</li>
+        <li>Renforcer la sécurité des postes</li>
+        <li>Assurer la continuité de service</li>
+      </ul>
+    </article>
+
+    <!-- PLANIFICATION -->
+    <article class="card">
+      <h2>Planification</h2>
+      <ul>
+        <li>Inventaire des postes</li>
+        <li>Tests de compatibilité Windows 11</li>
+        <li>Préparation de l’ISO</li>
+        <li>Planning d’intervention poste par poste</li>
+      </ul>
+    </article>
+
+    <!-- RÉALISATION -->
+    <article class="card">
+      <h2>Réalisation</h2>
+      <ul>
+        <li>Montage de l’ISO Windows 11</li>
+        <li>Lancement de l’installation via commande</li>
+        <li><code>setup.exe /product server</code></li>
+        <li>Intervention en coordination avec les agents</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <!-- SUIVI -->
+  <article class="card" style="margin-top:1rem;">
+    <h2>Suivi du projet</h2>
+    <ul>
+      <li>Nombre de postes migrés</li>
+      <li>Respect du planning</li>
+    </ul>
+  </article>
+
+  <!-- APPORT -->
+  <article class="card" style="margin-top:1rem;">
+    <h2>Apports professionnels</h2>
+    <ul>
+      <li>Organisation et gestion du temps</li>
+      <li>Communication avec les services</li>
+      <li>Vision globale d’un projet informatique</li>
+    </ul>
+  </article>
+
+  <!-- ANNEXES -->
+  <article class="card" style="margin-top:1rem;">
+        <h2>Évidences / Captures</h2>
+        <div class="project-body gallery-3">
+
+    <div class="project-media">
+      <img class="zoomable" src="../assets/projets/nouveau lecteur.png" alt="Tickets GLPI" />
+    </div>
+
+    <div class="project-media">
+      <img class="zoomable" src="../assets/projets/cmd.png" alt="Tickets GLPI" />
+    </div>
+  </div>
+
+<div class="project-media">
+      <img class="zoomable" src="../assets/projets/conserver.png" alt="Tickets GLPI" />
+    </div>
+
+<div class="project-media">
+  <a href="../assets/projets/procedure_install_windows11_iso.pdf" target="_blank">
+    📄 procedure_install_windows11_iso (PDF)
+  </a>
+</div>
+
+  </div>
+
+</article>
+
+      <div id="fullscreen" class="fullscreen">
+        <img id="fullscreen-img">
+      </div>
+
+  <p><a class="btn" href="../index.html#competences">← Retour aux compétences</a></p>
+
+</section>
+</main>
+
+<footer class="footer">
+  <small>© <span id="year"></span> Théo AUBINEAU — Dernière mise à jour : <time id="lastUpdated"></time></small>
+</footer>
+
+<script src="../assets/script.js"></script>
+
+<!-- Zoom image -->
+  <script>
+    document.querySelectorAll(".zoomable").forEach(img => {
+      img.addEventListener("click", () => {
+        document.getElementById("fullscreen-img").src = img.src;
+        document.getElementById("fullscreen").style.display = "flex";
+      });
+    });
+    document.getElementById("fullscreen").addEventListener("click", () => {
+      document.getElementById("fullscreen").style.display = "none";
+    });
+  </script>
+
+</body>
+</html>

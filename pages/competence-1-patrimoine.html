@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>1) Gérer le patrimoine informatique – Portfolio – Théo AUBINEAU</title>
+  <meta name="description" content="Gestion du patrimoine informatique d’une collectivité territoriale." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+
+<body>
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <strong>Théo AUBINEAU</strong>
+      <span class="subtitle">• BTS SISR</span>
+    </div>
+    <nav class="nav">
+      <button class="nav-toggle" aria-controls="menu" aria-expanded="false">☰</button>
+      <ul id="menu">
+        <li><a href="../index.html#accueil">Accueil</a></li>
+        <li><a class="active" href="../index.html#competences">Compétences</a></li>
+        <li><a href="../index.html#projets">Projets</a></li>
+        <li><a href="../index.html#annexes">Annexes</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+        <li><button id="themeToggle" class="btn ghost">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <p><a class="btn" href="../index.html#competences">← Retour aux compétences</a></p>
+
+      <h1>1) Gérer le patrimoine informatique</h1>
+      <p class="lead">
+        Recenser, suivre et sécuriser les ressources informatiques afin d’assurer la continuité du service public.
+      </p>
+
+      <div class="grid-3">
+
+        <!-- OBJECTIFS -->
+        <article class="card">
+          <h2>Objectifs</h2>
+          <ul>
+            <li>Recenser et identifier les ressources informatiques</li>
+            <li>Assurer la continuité du service public</li>
+            <li>Appliquer les règles du système d’information</li>
+          </ul>
+        </article>
+
+        <!-- PATRIMOINE -->
+        <article class="card">
+          <h2>Patrimoine informatique</h2>
+          <ul>
+            <li>Postes de travail des agents</li>
+            <li>Imprimantes</li>
+            <li>Serveurs</li>
+            <li>Équipements réseau</li>
+          </ul>
+        </article>
+
+        <!-- ACTIONS -->
+        <article class="card">
+          <h2>Actions réalisées</h2>
+          <ul>
+            <li>Suivi de la messagerie</li>
+            <li>Suivi des tickets via GLPI</li>
+            <li>Contrôles réguliers des services</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <article class="card" style="margin-top:1rem;">
+        <h2>Sécurité et règles du SI</h2>
+        <ul>
+          <li>Application des politiques de mots de passe</li>
+          <li>Gestion des comptes agents</li>
+          <li>Respect des règles d’utilisation du SI</li>
+        </ul>
+      </article>
+
+      <article class="card" style="margin-top:1rem;">
+        <h2>Évidences / Captures</h2>
+        <div class="project-body gallery-3">
+    <div class="project-media">
+      <img class="zoomable" src="../assets/projets/c1-inventaire.png" alt="Tickets GLPI" />
+    </div>
+
+    <div class="project-media">
+      <img class="zoomable" src="../assets/projets/glpi imprimante.jpg" alt="Tickets GLPI" />
+    </div>
+  </div>
+
+<div class="project-media">
+  <img
+    class="zoomable"
+    src="../assets/projets/ad.jpg"
+    alt="Tickets GLPI"
+    style="max-width: 600px; width: 100%;"
+  />
+</div>
+
+  <div class="project-media">
+  <img
+    class="zoomable"
+    src="../assets/projets/ad2.jpg"
+    alt="Tickets GLPI"
+    style="max-width: 600px; width: 100%;"
+  />
+</div>
+
+<div class="project-media">
+  <img
+    class="zoomable"
+    src="../assets/projets/logigramme.drawio.png"
+    alt="Tickets GLPI"
+    style="max-width: 600px; width: 100%;"
+  />
+</div>
+
+</article>
+
+      <div id="fullscreen" class="fullscreen">
+        <img id="fullscreen-img">
+      </div>
+
+      <p><a class="btn" href="../index.html#competences">← Retour aux compétences</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Théo AUBINEAU — Dernière mise à jour : <time id="lastUpdated"></time></small>
+  </footer>
+
+  <script src="../assets/script.js"></script>
+
+  <!-- Zoom image -->
+  <script>
+    document.querySelectorAll(".zoomable").forEach(img => {
+      img.addEventListener("click", () => {
+        document.getElementById("fullscreen-img").src = img.src;
+        document.getElementById("fullscreen").style.display = "flex";
+      });
+    });
+    document.getElementById("fullscreen").addEventListener("click", () => {
+      document.getElementById("fullscreen").style.display = "none";
+    });
+  </script>
+</body>
+</html>
+``

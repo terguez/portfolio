@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>2) Répondre aux incidents et aux demandes – Portfolio – Théo AUBINEAU</title>
+  <meta name="description" content="Support utilisateurs, diagnostic et résolution des incidents informatiques." />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <div class="brand">
+    <span class="dot"></span>
+    <strong>Théo AUBINEAU</strong>
+    <span class="subtitle">• BTS SISR</span>
+  </div>
+
+  <nav class="nav" aria-label="Navigation principale">
+    <button class="nav-toggle" aria-controls="menu" aria-expanded="false">☰</button>
+    <ul id="menu">
+      <li><a href="../index.html#accueil">Accueil</a></li>
+      <li><a class="active" href="../index.html#competences">Compétences</a></li>
+      <li><a href="../index.html#projets">Projets</a></li>
+      <li><a href="../index.html#annexes">Annexes</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><button id="themeToggle" class="btn ghost">🌓</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="section">
+
+  <p><a class="btn" href="../index.html#competences">← Retour aux compétences</a></p>
+
+  <h1>2) Répondre aux incidents et aux demandes d’assistance et d’évolution</h1>
+  <p class="lead">
+    Page d’aide à l’oral : prise en charge des incidents, méthode de diagnostic et support utilisateurs.
+  </p>
+
+  <div class="grid-3">
+
+    <!-- MÉTHODE -->
+    <article class="card">
+      <h2>Méthode de traitement</h2>
+      <ul>
+        <li>Collecte de la demande (mail, téléphone, passage)</li>
+        <li>Identification de l’urgence</li>
+        <li>Analyse du problème</li>
+        <li>Intervention technique ou accompagnement</li>
+        <li>Vérification avec l’utilisateur</li>
+        <li>Clôture de la demande</li>
+      </ul>
+    </article>
+
+    <!-- INCIDENTS -->
+    <article class="card">
+      <h2>Incidents traités</h2>
+      <ul>
+        <li>Connexion au domaine</li>
+        <li>Accès aux dossiers partagés</li>
+        <li>Mises à jour de postes</li>
+        <li>Dépannage matériel</li>
+        <li>Problèmes réseau simples</li>
+      </ul>
+    </article>
+
+    <!-- DEMANDES -->
+    <article class="card">
+      <h2>Demandes d’assistance</h2>
+      <ul>
+        <li>Installation de logiciels métiers</li>
+        <li>Réinstallation de logiciels</li>
+        <li>Aide bureautique</li>
+        <li>Utilisation des applications</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <!-- APPORT -->
+  <article class="card" style="margin-top:1rem;">
+    <h2>Apports professionnels</h2>
+    <ul>
+      <li>Amélioration du diagnostic</li>
+      <li>Meilleure communication avec les utilisateurs</li>
+      <li>Gestion des priorités</li>
+      <li>Autonomie dans le support</li>
+    </ul>
+  </article>
+
+  <!-- EVIDENCES -->
+<article class="card" style="margin-top:1rem;">
+  <h2>Évidences / Captures</h2>
+
+  <div class="project-body gallery-3">
+    <div class="project-media">
+      <img class="zoomable" src="../assets/projets/c2-tickets.png" alt="Tickets GLPI" />
+    </div>
+
+    <div class="project-media">
+      <img class="zoomable" src="../assets/projets/c3-tickets.png" alt="Tickets GLPI" />
+    </div>
+  </div>
+</article>
+	<p><a class="btn" href="../index.html#competences">← Retour aux compétences</a></p>
+    </section>
+  </main>
+
+<!-- FULLSCREEN -->
+<div id="fullscreen" class="fullscreen">
+  <img id="fullscreen-img">
+</div>
+
+<footer class="footer">
+  <small>© <span id="year"></span> Théo AUBINEAU — Dernière mise à jour : <time id="lastUpdated"></time></small>
+</footer>
+
+<script src="../assets/script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const fullscreen = document.getElementById("fullscreen");
+  const fullscreenImg = document.getElementById("fullscreen-img");
+
+  document.querySelectorAll(".zoomable").forEach(img => {
+    img.addEventListener("click", () => {
+      fullscreenImg.src = img.src;
+      fullscreen.style.display = "flex";
+    });
+  });
+
+  fullscreen.addEventListener("click", () => {
+    fullscreen.style.display = "none";
+  });
+});
+</script>
+
+</body>
+</html>
